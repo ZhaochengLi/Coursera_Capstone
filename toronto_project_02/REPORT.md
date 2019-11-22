@@ -14,8 +14,34 @@ For example, if we want to open a chinese restaurant, we want to choose a locati
 
 ### 2. Data acquisition and cleaning
 #### 2.1 Data acquisition
-- 
+To accomplish this project, we acquire datasets from many sourses:
+1. [Foursquares API](https://foursquare.com/), where are scrape accurate location data of vanues for exploration.
+2. [List of postal codes of Canada: M from Wikipedia](https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M), where we obtain the info about boroughs and neighborhoods of Toronto. This dataset will be converted into pandas dataframe and used for exploring neighborhoods around Toronto.
+3. [NYC geo location data from IBM](https://cocl.us/new_york_dataset). Similarly, we will use this JSON file to load NYC boroughs/neighborhoods dataset and explore it.
+
+These are all start-up datasets we collect online. As the project going through we will generate more datasets used for research. They will be mentioned and explicitly explained during the project.
+
 #### 2.2 Data cleaning
+After acquiring the datasets, we clean and format the datasets into the *pandas* dataframes. 
+- `df_toronto`, the source dataset for the location data of Toronto, including columns:
+![df_toronto]("./data/df_toronto.png")
+ - `Borough`, borough name
+ - `Neighbourhood`, the neighbourhood name
+ - `Latitude`, the latifude of the the neighbourhood location 
+ - `Longitude`, the longitude of the neighbourhood location
+ 
+- `df_nyc`, the source dataset for the location data of New York city, including columns:
+ ![df_nyc]("./data/df_nyc.png")
+ - `Borough`, borough name
+ - `Neighbourhood`, the neighbourhood name
+ - `Latitude`, the latifude of the the neighbourhood location 
+ - `Longitude`, the longitude of the neighbourhood location
+
+- `dft`, the source dataset population details and economy information of Toronto.
+![dft]("./data/dft.png")
+
+- `dfn`, the source dataset population details and economy information of NYC.
+![dfn]("./data/dfn.png")
 
 ### 3. Methodology
 
