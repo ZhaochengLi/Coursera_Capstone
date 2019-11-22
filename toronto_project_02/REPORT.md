@@ -24,24 +24,24 @@ These are all start-up datasets we collect online. As the project going through 
 #### 2.2 Data cleaning
 After acquiring the datasets, we clean and format the datasets into the *pandas* dataframes. 
 - `df_toronto`, the source dataset for the location data of Toronto, including columns:
-![df_toronto]("./data/df_toronto.png")
+![df_toronto](./data/df_toronto.png)
  - `Borough`, borough name
  - `Neighbourhood`, the neighbourhood name
  - `Latitude`, the latifude of the the neighbourhood location 
  - `Longitude`, the longitude of the neighbourhood location
  
 - `df_nyc`, the source dataset for the location data of New York city, including columns:
- ![df_nyc]("./data/df_nyc.png")
+ ![df_nyc](./data/df_nyc.png)
  - `Borough`, borough name
  - `Neighbourhood`, the neighbourhood name
  - `Latitude`, the latifude of the the neighbourhood location 
  - `Longitude`, the longitude of the neighbourhood location
 
 - `dft`, the source dataset population details and economy information of Toronto.
-![dft]("./data/dft.png")
+![dft](./data/dft.png)
 
 - `dfn`, the source dataset population details and economy information of NYC.
-![dfn]("./data/dfn.png")
+![dfn](./data/dfn.png)
 
 ### 3. Methodology
 
