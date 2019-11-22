@@ -44,10 +44,49 @@ After acquiring the datasets, we clean and format the datasets into the *pandas*
 ![dfn](./data/dfn.png)
 
 ### 3. Methodology
+Using the **Foursquare API** we can careate maps of neighborhoods for both Toronto and NYC:  
 
-#### 3.1 (Where most contents stay)
-#### 3.2 (Analysis)
+**Toronto**
+![map_toronto](./data/map_toronto.png)
+
+**NYC**
+![map_nyc](./data/map_nyc.png)
+
+And we can also get the top ten vanues for each neighborhood for both cities:  
+**Toronto**
+![top_ten_venues_toronto](./data/top_ten_venues_toronto.png)
+
+**NYC**
+![top_ten_venues_nyc](./data/top_ten_venues.png)
+
+And our main focus is by applying **machine learning: clustering**, and k-means cluster, we want to get the clusters of neighborhoods of two cities.
+
+**Toronto clusters**
+![toronto_clusters](./data/map_toronto_clusters.png)
+
+**NYC clusters**
+![nyc_clusters](./data/map_nyc_clusters.png)
+
+And another topic we interested is the information about multiculture, income, population.
+
+We can accomplish this by cleaning and formatting datasets `dfn`, `dft`:
+
+**Toronto data**
+![toronto_data](./data/toronto_data.png)
+
+**NYC data**
+![nyc_data](./data/nyc_data.png)
 
 ### 4. Results & Discussion
- 
+Based on all kinds of analysis plots, we can have varioud observations by comparing the performance of neighborhoods of Toronto and NYC
+
+1.  It can be noticed that Toronto has one big cluster and a smaller one, while others are insignificant compared to them. As for NYC, there are two big and one mid size clusters, while other two clusters are insignificant compared to them. Therefore, we see Toronto seems to have more uniform neighborhood type.  New York has much more varieties. So, the two cities are different in terms of segmentation.
+
+2. NYC and Tronto are similar in population, around 7 million, more or less, and the race ratios are also similar.
+
+3. for the incomes, there are realtively big differential between boroughs for each city. In toronto, the people working in central toronto areas has 2 or 3 times more income than incomes of prople from other boroughs. Meanwhile, in NYC, prople in Manhattan earn dramatically more than people from other area. For example, people in Manhattan earn round 320,000 USD per capital, while people in Brooklyn earn 30,000 USD per capital.
+
 ### 5. Conclusion
+Therefore, from my research, Toronto and NYC are different in segmentation, but they are similar in multiculture, population and income distributions.
+
+**This research still need more work to be done. Thank you very much for reviews and advices!**
